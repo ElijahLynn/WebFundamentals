@@ -87,7 +87,7 @@ object that is passed to the `getUserMedia()` API
 
   var handleSuccess = function(stream) {
     if (window.URL) {
-      player.src = window.URL.createObjectURL(stream);
+      player.srcObject=stream;
     } else {
       player.src = stream;
     }
